@@ -3,7 +3,7 @@
 A muted dark colour scheme for Neovim with broad plugin support.
 
 <p align="center">
-  <img src="./assets/theme.jpg" width="256" alt="logo">
+  <img src="./assets/theme.jpg" alt="theme">
 </p>
 ## Requirements
 
