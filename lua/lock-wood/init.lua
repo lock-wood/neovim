@@ -32,7 +32,6 @@ local function build_highlights(p, o)
 	local transparent = o.transparent
 
 	local bg = transparent and p.none or p.bg_primary
-	local bg_alt = transparent and p.none or p.bg_secondary
 	local bg_dark = transparent and p.none or p.bg_dark
 	local bg_float = p.bg_secondary -- floats keep a bg even when transparent
 

@@ -2,6 +2,9 @@
 
 A muted dark colour scheme for Neovim with broad plugin support.
 
+<p align="center">
+  <img src="./assets/theme.jpg" width="256" alt="logo">
+</p>
 ## Requirements
 
 - Neovim >= 0.9 (0.10+ recommended for the modern treesitter captures)
