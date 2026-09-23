@@ -13,7 +13,7 @@ A muted dark colour scheme for Neovim with broad plugin support.
 
 ```lua
 {
-  "LOColourScheme/vim",
+  "lock-wood/neovim",
   lazy = false,
   priority = 1000,
   config = function()

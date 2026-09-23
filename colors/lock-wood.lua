@@ -1,2 +1,2 @@
--- Entry point for :colorscheme LOScheme
+-- Entry point for :colorscheme lock-wood
 require("lock-wood").load()
