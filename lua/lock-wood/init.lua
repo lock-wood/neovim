@@ -19,8 +19,8 @@ M.options = vim.deepcopy(defaults)
 
 function M.setup(opts)
 	M._setup_called = true
-	-- Legacy: merge any options previously set via vim.g.lock-wood_opts.
-	local legacy = vim.g.lock - wood_opts or {}
+	-- Legacy: merge any options previously set via vim.g.lock_wood_opts.
+	local legacy = vim.g.lock_wood_opts or {}
 	M.options = vim.tbl_deep_extend("force", vim.deepcopy(defaults), legacy, opts or {})
 	-- Re-apply immediately if the scheme is already active.
 	if vim.g.colors_name == "lock-wood" then
@@ -726,9 +726,9 @@ end
 --- Apply the colorscheme. Called from colors/lock-wood.lua.
 function M.load()
 	local opts = M.options
-	-- Legacy: honour vim.g.lock-wood_opts when setup() was never called.
-	if not M._setup_called and vim.g.lock - wood_opts then
-		opts = vim.tbl_deep_extend("force", vim.deepcopy(defaults), vim.g.lock - wood_opts)
+	-- Legacy: honour vim.g.lock_wood_opts when setup() was never called.
+	if not M._setup_called and vim.g.lock_wood_opts then
+		opts = vim.tbl_deep_extend("force", vim.deepcopy(defaults), vim.g.lock_wood_opts)
 	end
 
 	if vim.g.colors_name then
